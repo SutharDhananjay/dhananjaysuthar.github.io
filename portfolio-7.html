@@ -1,0 +1,98 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="pe-7s-icon pe-7s-close"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Krid</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div class="item">
+                        <img src="images/portfolio/full/krid.png" alt="">
+                    </div>
+                </div>
+
+
+                <script type="text/javascript">
+                    function customAjaxScroll() {
+                        var windowWidth = $(window).width();
+                        if (windowWidth > 991) {
+                            // Custom Ajax Page Scroll
+                            $("#ajax-page").mCustomScrollbar({
+                                scrollInertia: 8
+                                , documentTouchScroll: false
+                            });
+                        } else {
+                            $("#ajax-page").mCustomScrollbar('destroy');
+                        }
+                    }
+
+                    jQuery(document).ready(function ($) {
+
+                        // Ajax Loaded Page Scroll
+                        customAjaxScroll();
+
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed: 1200
+                            , items: 1
+                            , loop: true
+                            , dots: true
+                            , nav: true
+                            , navText: false
+                            , margin: 10
+                        });
+
+                    });
+
+                    jQuery(window).on('resize', function () {
+                        customAjaxScroll();
+                    });
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="block-title">
+                    <h3>Description</h3>
+                </div>
+                <ul class="project-general-info">
+                    <li>
+                        <p><i class="fa fa-user"></i> Dhananjay Suthar</p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-globe"></i> <a href="https://krid.in/" target="_blank">www.krid.in</a></p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-calendar"></i>January, 2018</p>
+                    </li>
+                </ul>
+
+                <p class="text-justify">KRID is a non-profit movement for developing Adventure based Youth Leadership with a blend of Unforgettable Outdoor Summits that includes Trekking, Mountaineering, Water Rafting, Backpacking, Natural Camps and Life Skill based Pursuit. Every Camp of KRID will be an elevating experience to an even higher level of personal growth, grounding them in their inner strength while they transform themselves into Extraordinary Youth Leaders. KRID gives opportunities to experience the best of India’s hikes, national parks and wild land via a variety of trips styles. We have the extraordinary privilege of operating trips in India's most premier and exciting outdoor destinations at very affordable cost.</p>
+                <!-- /Project Description -->
+
+                <!-- Technology -->
+                <div class="tags-block">
+                    <div class="block-title">
+                        <h3>Technology</h3>
+                    </div>
+                    <ul class="tags">
+                        <li><a>HTML5</a></li>
+                        <li><a>CSS3</a></li>
+                        <li><a>Javascript</a></li>
+                    </ul>
+                </div>
+                <!-- /Technology -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
